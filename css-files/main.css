@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+body{
+    padding-top: 80px;
+    padding-bottom: 3000px;
+    padding-left:90px;
+    background-color:rgb(241, 241, 241);
+}
+@media(min-width:1200px){
+    body{
+        padding-left: 185px;
+    }
+}
+.thumbnail-div img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+.video-info{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    /* background-color: gray; */
+    margin-top: 2px;
+}
+.profile-pic-div img{
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.profile-pic-div{
+    margin-top:4px;
+    position: relative;
+}
+.anchor{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+.author,.view-details{
+    font-size: 10px;
+    color: rgb(114, 114, 114);
+}
+.video-details{
+    padding-right: 20px;
+}
+.thumbnail-div{
+    position: relative;
+}
+.video-time{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+.profile-pic-div .tooltip{
+    position: absolute;
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    color: white;
+    white-space: nowrap;
+    align-items: center;
+    box-shadow:2px 2px 2px 1px rgba(0,0,0,0.34);
+    padding: 9px 12px;
+    border-radius: 2px;
+    bottom: -55px;
+    left: -4px;
+    opacity:0;
+    pointer-events: none;
+    transition: opacity 0.14s;
+    z-index: 300;
+}
+.tooltip-name{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.tooltip-sub{
+    font-size: 11px;
+    color: gray;
+}
+.tooltip-info{
+    margin-left:7px;
+}
+.tooltip-profile-pic .tooltip-dp{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.profile-pic-div:hover .tooltip{
+    opacity: 1;
+}
+@media (max-width:400px){
+    .main-container{
+        grid-template-columns:1fr;
+    }
+}
+@media (min-width:900px) {
+    .main-container{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media(min-width:401px) and (max-width:899px){
+    .main-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:1000px){
+    .author,.view-details{
+        font-size: 14px;
+    }
+    .anchor{
+        font-size:16px;
+        line-height: 24px;
+    }
+}
+
+

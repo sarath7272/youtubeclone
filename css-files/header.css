@@ -1,0 +1,150 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    z-index: 200;
+}
+.left-div{
+    width: 600px;
+    display: flex;
+    /* justify-content:space-around; */
+    align-items: center;
+}
+.middle-div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.right-div{
+    width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hamberger-menu-div > img{
+    width: 30px;
+    cursor: pointer;
+}
+.youtube-icon-div img{
+    width: 80px;
+    cursor: pointer;
+}
+.youtube-icon-div{
+    margin-left: 20px;
+
+}
+.hamberger-menu-div{
+    margin:0px 10px 0px 30px ;
+}
+.search-icon img{
+    width: 30px;  
+    cursor: pointer;
+
+}
+.mike-div img{
+    width: 30px;
+    cursor: pointer;
+} 
+.mike-div{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    position:relative;
+}
+.search-icon{
+    border: 1px solid rgb(205, 202, 202);
+    background-color: rgb(223, 223, 223);
+    padding: 7px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    position: relative;
+}
+.middle-div input{
+    width: 300px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 1px solid rgb(205, 202, 202);
+    border-radius: 3px;
+    color: blue;
+}
+.input-div{
+    margin: 0px 0px 0px 40px;
+}
+.create-icon-div img,.app-icon-div img, .notification-div img  {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.create-icon-div,.app-icon-div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-pic-div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit:cover;
+    cursor: pointer;
+}
+.notification-div{
+    position: relative;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.notification-count{
+    position: absolute;
+    color: white;
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    font-size: 11px;
+    right: -1px;
+    top: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-icon .tooltip,
+.mike-div .tooltip,
+.create-icon-div .tooltip,
+.app-icon-div .tooltip,
+.notification-div .tooltip{
+    position: absolute;
+    bottom: -30px;
+    background-color:rgba(128, 128, 128, 0.967);
+    color: white;
+    font-size: 9px;
+    font-weight: lighter;
+    padding: 5px 8px;
+    border-radius: 2px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    opacity: 0;
+    white-space:nowrap;
+}
+.search-icon:hover .tooltip,.mike-div:hover .tooltip,.create-icon-div:hover .tooltip , .app-icon-div:hover .tooltip, .notification-div:hover .tooltip
+{
+    opacity: 1;
+}
+
+
+
